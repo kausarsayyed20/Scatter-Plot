@@ -1,0 +1,74 @@
+body{
+   
+    background-image: radial-gradient( circle farthest-corner at -0.1% 1.8%,  rgba(255,77,77,0.7) 0%, rgba(255,184,129,0.34) 100.2% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.legend{
+    font-size: 12px;
+    position: absolute;
+    padding: 20px;
+    top: 180px;
+    right: 0;
+    text-align: right;
+}
+.legend .text {
+    position: relative;
+    padding-right: 25px;
+    min-width: 200px;
+    margin:10px;
+}
+
+.legend .box{
+    display:inline-block;
+    height: 20px;
+    width:20px;
+    position: absolute;
+    top:-3px;
+    right:0;
+}
+.legend .box.orange{
+    background-color: rgb(219, 118, 160);
+}
+.legend .box.blue{
+    background-color: rgb(255, 0, 106);
+}
+h1{
+    margin-top: -40px;
+}
+
+svg{
+    border: 2px solid black;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+    background-color: #ffffff;
+}
+
+.container{
+    position: relative;
+}
+
+.tooltip{
+    background-color:#eaeaea;
+    display: none;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+    position: absolute;
+     font-size: 15px;
+    
+     padding: 15px;
+    z-index :100;
+}
+
+.tooltip p{
+    margin:5px;
+}
+.tooltip.show{
+    display: block;
+}
+.tooltip small{
+    display: inline-block;
+    margin-top: 10px;
+}
